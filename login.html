@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sajatStilus.css">
+    <link rel="icon" type="image/x-icon" href="/pictures/3135715.png">
+    <script type="text/javascript" src="./sajatScript.js"></script>
+    <title>Bejelentkezés</title>
+</head>
+
+<body>
+    <form name="loginForm" action="./index.html" onsubmit="return validateForm()" method="get">
+        <label for="userName">Felhasználónév:</label><br>
+        <input type="text" id="userName" name="userName"><br>
+        <label for="userPass">Jelszó:</label><br>
+        <input type="password" id="userPass" name="userPass"><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="statement" name="statement" value=1>
+        <label for="statement">Elfogadom a felhasználási feltételeket</label><br>
+        <input type="submit" value="Bejelentkezés">
+    </form>
+</body>
+
+</html>
