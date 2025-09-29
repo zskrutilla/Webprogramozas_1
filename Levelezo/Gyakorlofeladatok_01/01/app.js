@@ -21,7 +21,7 @@ if (tbody){
         list.push(k);
       }
     }
-    // egyszerű rendezés switch-csel kiválasztott kulcs szerint
+    // egyszerű rendezés switch-el kiválasztott kulcs szerint
     list.sort((a,b)=>{
       let A,B;
       switch (sortKey){

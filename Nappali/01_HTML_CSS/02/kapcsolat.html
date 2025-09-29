@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Étterem – Kapcsolat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>🍝 Étterem</h1>
+        <nav>
+            <a href="index.html">Menü</a>
+            <a class="active" href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <main class="container grid-2">
+        <section class="card">
+            <h2>Asztalfoglalás</h2>
+            <form>
+                <label>Név<input name="nev" required></label>
+                <label>E-mail<input name="email" type="email" required></label>
+                <label>Dátum<input name="datum" type="date" required></label>
+                <label>Fő <input name="fo" type="number" min="1" max="12" required></label>
+                <button>Beküldés</button>
+            </form>
+        </section>
+        <aside class="card">
+            <h2>Elérhetőség</h2>
+            <p>1111 Budapest, Minta u. 1.</p>
+            <p><a href="tel:+3612345678">+36 1 234 5678</a></p>
+        </aside>
+    </main>
+
+    <footer class="site-footer">© 2025 Étterem</footer>
+</body>
+
+</html>

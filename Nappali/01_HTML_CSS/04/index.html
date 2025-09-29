@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog – Cikk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Webdev Blog</h1>
+    </header>
+
+    <main class="container layout">
+        <article class="post">
+            <header>
+                <h1>Reszponzív tippek kezdőknek</h1>
+                <p class="meta">Szerző: <strong>K. Kata</strong> • 2025-09-29</p>
+                <nav class="toc">
+                    <strong>Tartalom:</strong>
+                    <a href="#grid">Grid</a>
+                    <a href="#flex">Flexbox</a>
+                    <a href="#media">Media query</a>
+                </nav>
+            </header>
+
+            <h2 id="grid">CSS Grid</h2>
+            <p>A Grid két dimenziós elrendezés...</p>
+            <pre><code>.grid{display:grid;grid-template-columns:1fr 2fr}</code></pre>
+
+            <h2 id="flex">Flexbox</h2>
+            <blockquote>„A flex a dobozmodell svájci bicskája.”</blockquote>
+            <ul>
+                <li>Irány: row/column</li>
+                <li>Törés: wrap</li>
+            </ul>
+
+            <h2 id="media">Media query</h2>
+            <p>Egyszerű példa:</p>
+            <pre><code>@media (max-width:800px){ .sidebar{display:none} }</code></pre>
+        </article>
+
+        <aside class="sidebar">
+            <h3>Ajánlott</h3>
+            <ul>
+                <li><a href="#">HTML szemantika</a></li>
+                <li><a href="#">Form elemek</a></li>
+                <li><a href="#">Színtémák</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="site-footer">© 2025 Webdev Blog</footer>
+</body>
+
+</html>
