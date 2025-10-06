@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edzőterem – Órarend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Edzőterem</h1>
+        <nav>
+            <a class="active" href="index.html">Órarend</a>
+            <a href="jelentkezes.html">Jelentkezés</a>
+        </nav>
+    </header>
+    <main class="container">
+        <p>Kattints a cellákra a kedvencek kijelöléséhez!</p>
+        <table id="orarend">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>18:00</th>
+                    <td data-class="H-Pilates-18">Pilates</td>
+                    <td data-class="K-TRX-18">TRX</td>
+                    <td data-class="S-Joga-18">Jóga</td>
+                    <td data-class="Cs-Kondi-18">Kondi</td>
+                    <td data-class="P-Spinning-18">Spinning</td>
+                </tr>
+                <tr>
+                    <th>19:00</th>
+                    <td data-class="H-Box-19">Box</td>
+                    <td data-class="K-Joga-19">Jóga</td>
+                    <td data-class="S-TRX-19">TRX</td>
+                    <td data-class="Cs-Funkcio-19">Funkcionális</td>
+                    <td data-class="P-Kondi-19">Kondi</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="site-footer">© Edzőterem</footer>
+    <script src="gym.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edzőterem – Jelentkezés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Jelentkezés</h1>
+        <nav>
+            <a href="index.html">Órarend</a>
+            <a class="active" href="jelentkezes.html">Jelentkezés</a>
+        </nav>
+    </header>
+    <main class="container grid-2">
+        <section class="card">
+            <h2>Kiválasztott órák</h2>
+            <ul id="kedvencek"></ul>
+        </section>
+        <section class="card">
+            <h2>Űrlap</h2>
+            <form id="jelentkezes" onsubmit="return validateGym()">
+                <label>Név <input id="nev" required></label>
+                <label>E‑mail <input id="email" type="email" required></label>
+                <button>Jelentkezem (demó)</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">© Edzőterem</footer>
+    <script src="gym.js"></script>
+</body>
+
+</html>
