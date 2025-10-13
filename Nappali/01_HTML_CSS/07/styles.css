@@ -33,7 +33,7 @@ body {
 }
 
 .site-footer {
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: center;
     border-top: 1px solid #1f2937
 }
@@ -69,4 +69,10 @@ td {
     height: auto;
     border-radius: .6rem;
     border: 1px solid #1f2937
+}
+
+@media (max-width:960px) {
+    .site-header h1 {padding: 1.2rem;}
+    th, td {padding: 1.2rem;}
+    .hero{padding: 1.2rem;}
 }
