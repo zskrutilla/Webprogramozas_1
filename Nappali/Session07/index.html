@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demó</title>
+</head>
+
+<body>
+    <h1>JavaScript debugger</h1>
+    <h3>Demo 1:</h3>
+    <p id="demo1">-</p>
+    <h3>Demo 2:</h3>
+    <p id="demo2">-</p>
+    <h3>Demo 3:</h3>
+    <p id="demo3">-</p>
+    <h3>Demo 4:</h3>
+    <p id="demo4">-</p>
+    <h3>Demo 5:</h3>
+    <p id="demo5">-</p>
+    <h3>Demo 6:</h3>
+    <p id="demo6">-</p>
+    <hr>
+    <br>
+    <h2>Általános debug:</h2>
+    <p id="gen"></p>
+
+    <script>
+        document.getElementById("demo1").innerHTML = "Hello world!";
+
+        let variable;
+        variable = "Hello from variable!"
+        let a = '12354';
+        let b = 2;
+
+        a = 2;
+
+        //let c = a + b;
+
+        document.getElementById("demo2").innerHTML = (a + b) * 3;
+        document.getElementById("demo3").innerHTML = typeof (a);
+
+        if (b > 3) {
+            document.getElementById("demo4").innerHTML = "Nagyobb!";
+        }
+        else {
+            document.getElementById("demo4").innerHTML = "Kisebb!";
+        }
+
+        let c;
+
+        b > 3 ? c = "Nagyobb" : c = "Kisebb!";
+
+        document.getElementById("demo5").innerHTML = c;
+
+        let day = "";
+
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+
+        document.getElementById("demo6").innerHTML = day;
+
+        let text = "";
+        let text2 = "";
+
+        let x = 5;
+
+        for (let i = 0; i < 50; i++) {
+            text += "The number is " + i + "<br>";
+        }
+
+        while (x < 5) {
+            text2 += "The while number is " + x + "<br>";
+            x++;
+        }
+
+        do {
+            text2 += "The while number is " + x + "<br>";
+            x++;
+        } while (x < 5)
+
+        document.getElementById("gen").innerHTML = text2;
+
+    </script>
+
+</body>
+
+</html>
